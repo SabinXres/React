@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+}
+
+.navbar {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: black;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: lightblue;
+    color: blue;
+}
+
+.section {
+    padding: 30px 20px;
+    background-color: white;
+    color: black;
+}
+
+#contact {
+    text-align: center;
+    padding: 15px;
+    background-color: gray;
+    color: black;
+}
