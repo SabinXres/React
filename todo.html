@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="todo-input" placeholder="Enter a todo item">
+    <button id="add-todo-btn">Add Todo</button>
+    <ul id="todo-list"></ul>
+    <script>
+      
+       
+        document.getElementById("todo-list").innerHTML =
+            localStorage.getItem("todos");
+
+        document.getElementById("add-todo-btn").onclick = function () {
+            let input = document.getElementById("todo-input");
+            let list = document.getElementById("todo-list");
+
+            
+
+            list.innerHTML += "<li>" + input.value + "</li>";
+
+         
+            localStorage.setItem("todos", list.innerHTML);
+
+            
+        };
+    </script>
+
+
+
+</body>
+</html>
